@@ -155,10 +155,6 @@ function Evacuation() {
           <input
             type="number"
             className={styles.input}
-            style={{
-              width: `${calculateWidth(numberOfPeople.toString.length)}px`,
-              // color:'black'
-          }}
             value={numberOfPeople}
             onChange={(e) => setNumberOfPeople(parseInt(e.target.value))}
           />

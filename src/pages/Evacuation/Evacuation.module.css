@@ -26,13 +26,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 32px;
   width: 60%;
   background-color: #3b3a3c;
   border-radius: 8px;
 }
 .input {
-  /* width: 120px; */
+  width: 120px;
   border: none;
   color: black;
   font-size: 16px;
@@ -46,9 +46,13 @@
   flex-direction: column;
   gap: 32px;
 }
-.infoTableContainer,
+.infoTableContainer{
+  background-color: #3b3a3c !important;
+  padding: 32px;
+  border-radius: 32px;
+}
 .transportContainer {
-  background-color: #fff;
+  background-color: #3b3a3c;
   padding: 32px;
   border-radius: 32px;
 }
@@ -61,11 +65,27 @@ table {
 th,
 td {
   padding: 8px 16px;
-  border: 1px solid #ddd;
+  border: 1px solid #b2afaf;
+  background-color: #e6e6e6;
+}
+
+/* Default background color for all cells */
+th, td {
+  background-color: #e6e6e6;  /* Light gray color */
+}
+
+/* Zebra-striping for rows: alternating white and light gray */
+tr:nth-child(odd) td {  /* Odd rows */
+  background-color: #f9f9f9;  /* More white color */
+}
+
+tr:nth-child(even) td {  /* Even rows */
+  background-color: #e6e6e6;  /* Light gray color */
 }
 
 th {
-  background-color: #869bcb;
+  background-color: #404247;
+  color: #ffffff;
 }
 td {
   color: black;
@@ -82,7 +102,7 @@ line {
 .transportContainer {
   display: flex;
   flex-wrap: wrap;
-  background-color: #fff;
+  background-color: #3b3a3c;
   padding: 32px;
   border-radius: 32px;
   justify-content: space-between;
@@ -99,7 +119,7 @@ p {
 }
 .transportInfo {
   border-radius: 16px;
-  background-color: #e6e6e6;
+  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   align-items: center;

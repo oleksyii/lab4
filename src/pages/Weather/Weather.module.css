@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 120px;
+}
+.weatherVisualizationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+  background-color: #3b3a3c;
+  border-radius: 8px;
+  color:#ffffff
+}
+.weatherContainer {
+  display: flex;
+  gap: 16px;
+}
+.weatherItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #ffffff;
+  color:#3b3a3c
+}
+.valueHeader {
+  font-weight: 600;
+}
+.weatherImage {
+  height: 100px;
+}

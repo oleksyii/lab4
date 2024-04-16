@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 64px 80px;
+}
+.darkBgContainer {
+  padding: 16px;
+  background-color: #3b3a3c;
+  border-radius: 8px;
+  color:#ffffff
+}
+.evacuationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.subtitle {
+  color: #fff;
+  width: max-content;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 60%;
+  background-color: #3b3a3c;
+  border-radius: 8px;
+}
+.input {
+  /* width: 120px; */
+  border: none;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.mainContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.infoTableContainer,
+.transportContainer {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 32px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #869bcb;
+}
+td {
+  color: black;
+  width: auto;
+}
+
+tspan {
+  color: black;
+  fill: black;
+}
+line {
+  stroke: black;
+}
+.transportContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 32px;
+  justify-content: space-between;
+}
+
+.transportContainer > * {
+  flex-basis: calc(25% - 8px);
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-bottom: 32px;
+}
+p {
+  margin: 0;
+}
+.transportInfo {
+  border-radius: 16px;
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0;
+}
+.title {
+  font-weight: 600;
+}
+.backButton {
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 32px;
+  font-size: 18px;
+  background-color: #869bcb;
+  cursor: pointer;
+  color: #fff;
+}
+.r {
+  color: white;
+  width: max-content;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+.capacityExceededMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 64px;
+  gap: 32px;
+}
+.okButton {
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 32px;
+  font-size: 18px;
+  background-color: #ffd217;
+  cursor: pointer;
+  width: min-content;
+}

@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b3a3c;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.header {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.settingsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.settingsItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+h3 {
+  width: 150px;
+  margin: 0;
+  text-align: left;
+}
+
+.select {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.option {
+  font-size: 16px;
+}

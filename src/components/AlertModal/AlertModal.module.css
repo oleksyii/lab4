@@ -1,0 +1,41 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 64px;
+  gap: 32px;
+}
+.planButton {
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 32px;
+  font-size: 18px;
+  background-color: red;
+  cursor: pointer;
+}
+.okButton {
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 32px;
+  font-size: 18px;
+  background-color: #ffd217;
+  cursor: pointer;
+}
